@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Currency Converter</h1>
+
+        <p class="description">
+            Convert currencies using exchange-rate data.
+        </p>
+
+        <label for="amount">Amount</label>
+
+        <input 
+            type="number" 
+            id="amount" 
+            placeholder="Enter amount"
+            min="0"
+        >
+
+        <div class="currency-container">
+
+            <div>
+                <label for="fromCurrency">From</label>
+
+                <select id="fromCurrency">
+                    <option value="">Loading currencies...</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="toCurrency">To</label>
+
+                <select id="toCurrency">
+                    <option value="">Loading currencies...</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="convertButton">
+            Convert
+        </button>
+
+        <div id="result">
+            Your converted amount will appear here.
+        </div>
+
+        <div id="rate">
+        </div>
+
+        <div id="status">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
